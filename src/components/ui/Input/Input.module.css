@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--light-text);
+  }
+  
+  .theme-dark .label {
+    color: var(--dark-text);
+  }
+  
+  .required {
+    color: var(--danger-color);
+    margin-left: 0.25rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-border);
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+    transition: var(--transition);
+    background-color: var(--light-surface);
+    color: var(--light-text);
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgb(59 130 246 / 0.1);
+  }
+  
+  .input.error {
+    border-color: var(--danger-color);
+  }
+  
+  .input.error:focus {
+    box-shadow: 0 0 0 3px rgb(239 68 68 / 0.1);
+  }
+  
+  .input.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #f9fafb;
+  }
+  
+  .theme-dark .input {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+  }
+  
+  .theme-dark .input.disabled {
+    background-color: #1f2937;
+  }
+  
+  .errorText {
+    font-size: 0.75rem;
+    color: var(--danger-color);
+    margin-top: 0.25rem;
+  }

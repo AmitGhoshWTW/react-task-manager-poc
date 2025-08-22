@@ -1,0 +1,77 @@
+.tasks-page {
+    min-height: calc(100vh - 140px);
+    padding: 2rem 0;
+    background-color: var(--light-bg);
+  }
+  
+  .theme-dark .tasks-page {
+    background-color: var(--dark-bg);
+  }
+  
+  .tasks-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tasks-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light-text);
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .theme-dark .tasks-header h1 {
+    color: var(--dark-text);
+  }
+  
+  .tasks-header p {
+    font-size: 1.125rem;
+    color: var(--light-text-secondary);
+    margin: 0;
+  }
+  
+  .theme-dark .tasks-header p {
+    color: var(--dark-text-secondary);
+  }
+  
+  .tasks-stats,
+  .tasks-form,
+  .tasks-controls,
+  .tasks-list {
+    margin-bottom: 2rem;
+  }
+  
+  .controls-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .search-section {
+    width: 100%;
+  }
+  
+  .tasks-list-card {
+    min-height: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .tasks-page {
+      padding: 1rem 0;
+    }
+    
+    .tasks-header h1 {
+      font-size: 2rem;
+    }
+    
+    .tasks-header p {
+      font-size: 1rem;
+    }
+    
+    .tasks-stats,
+    .tasks-form,
+    .tasks-controls,
+    .tasks-list {
+      margin-bottom: 1.5rem;
+    }
+  }

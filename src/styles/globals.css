@@ -1,0 +1,77 @@
+/* Import base styles */
+@import '../index.css';
+
+/* Global component styles */
+.card {
+  background-color: var(--light-surface);
+  border: 1px solid var(--light-border);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.theme-dark .card {
+  background-color: var(--dark-surface);
+  border-color: var(--dark-border);
+}
+
+.priority-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.priority-high {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+.priority-medium {
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+.priority-low {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.theme-dark .priority-high {
+  background-color: #450a0a;
+  color: #fca5a5;
+}
+
+.theme-dark .priority-medium {
+  background-color: #451a03;
+  color: #fcd34d;
+}
+
+.theme-dark .priority-low {
+  background-color: #052e16;
+  color: #86efac;
+}
+
+/* Loading animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .card {
+    padding: 1rem;
+  }
+}
